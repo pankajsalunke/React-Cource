@@ -1,0 +1,13 @@
+
+#navB li{
+  list-style: none;
+  padding: 10px;
+
+}
+
+#navB{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
