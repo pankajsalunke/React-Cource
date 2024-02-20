@@ -1,19 +1,44 @@
 import React from 'react'
 
+function Home() {
+  // let counter = 15
+  // let [counter, setCounter] = useState(10);
 
-// function Home({heading}) {
-function Home(prop) {
+  // const addValue = () => {
+  //   setCounter(counter+1)
+  // setCounter(counter + 1);
+  // setCounter(counter + 1);
+  // setCounter(counter + 1);
+  // setCounter(counter + 1);
+  // setCounter(counter + 1);  // this is execute or updates only once
 
-  
-    const name = "pankaj"
-    const element = <h1>hello , {name}</h1>
+  // setCounter((prevCounter) => prevCounter+1)
+  // setCounter((prevCounter) => prevCounter+1)
+  // setCounter((prevCounter) => prevCounter+1) //update 3 times on one click
+  // };
+
+  // const removeVlaue = () => {
+  //   setCounter(counter - 1);
+  // };
+
+  // if (counter >= 20) {
+  //   console.log("You can`t increase counter value more than 20");
+  // } else if (counter === 0) {
+  //   console.log("You can`t decrease counter value less than 0");
+  // }
+
+  // console.log(counter);
   return (
-    <div>
-        <p>{element}</p>
-        {/* <h2>this is an prope value,{heading}</h2> */}
-        <h2>this is an prope value,{prop.heading}</h2>
-        
-    </div>
+    <>
+     <div>
+        <h1>Counter Project</h1>
+      </div>
+      <h2>Counter Value:{counter}</h2>
+      <button onClick={addValue}>Increase</button>
+
+      <button onClick={removeVlaue}>Decrease</button> 
+    <p>hi</p>
+    </>
   )
 }
 

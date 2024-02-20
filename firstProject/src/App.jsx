@@ -2,53 +2,32 @@ import { useState } from "react";
 
 import "./App.css";
 import Home from "./components/Home";
+import Example from "./components/Example";
+import Example2 from "./components/Example2";
+import Example3 from "./components/Example3";
+import Example4 from "./components/Example4";
+import Login from "./components/Login";
+import { Profile } from "./components/Profile";
+import Gallery from "./components/Gallery";
+import Tailwind from "./components/Tailwind";
 
 function App() {
-  // let counter = 15
-  let [counter, setCounter] = useState(10);
   
-  const addValue = () => {
-    setCounter(counter+1)
-    // setCounter(counter + 1);
-    // setCounter(counter + 1);
-    // setCounter(counter + 1);
-    // setCounter(counter + 1);
-    // setCounter(counter + 1);  // this is execute or updates only once
-
-
-    // setCounter((prevCounter) => prevCounter+1)
-    // setCounter((prevCounter) => prevCounter+1)
-    // setCounter((prevCounter) => prevCounter+1) //update 3 times on one click 
-  };
-
-  const removeVlaue = () => {
-    setCounter(counter - 1);
-  };
-
-  // if (counter >= 20) {
-  //   console.log("You can`t increase counter value more than 20");
-  // } else if (counter === 0) {
-  //   console.log("You can`t decrease counter value less than 0");
-  // }
-
-  // console.log(counter);
   return (
     <>
-      <div>
-        <h1>Counter Project</h1>
-      </div>
-      <h2>Counter Value:{counter}</h2>
-      <button onClick={addValue}>Increase</button>
-
-      <button onClick={removeVlaue}>Decrease</button>
-
-      <div>
-        <Home heading="prop value"/>
-      </div>
-
-      //Backbox autocomplete
       
-      
+
+      {/* <Example /> */}
+      {/* <Example2 /> */}
+      {/* <Example3 /> */}
+      {/* <Example4 /> */}
+      {/* <Login /> */}
+      {/* <div>
+        <Gallery />
+        <Profile />
+      </div> */}
+
+      <Tailwind />
     </>
   );
 }
